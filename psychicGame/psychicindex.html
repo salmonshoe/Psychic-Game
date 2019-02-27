@@ -25,6 +25,14 @@
         var lossText = document.getElementById("losses");
         var guessesLeftText = document.getElementById("guesses-left");
         var guessLogText = document.getElementById("guess-log");
+        var newText = "Your Guesses so far: ";
+
+    function newGame() {
+        winsText = "Wins: " + wins;
+        lossText = "Losses: " + losses;
+        guessesLeftText = "Guesses Left: " + guesses;
+        guessLogText = newText;
+    }
 
     document.onkeypress = function(event) {
         var userPress = event.key
@@ -38,15 +46,15 @@
         }
         if (guesses === 0) {
             losses++;
+            newGame()
         }
-        
+  
 
         winsText.textContent = "Wins: " + wins;
         lossText.textContent = "Losses: " + losses;
         guessesLeftText.textContent = "Guesses Left: " + guesses;
-        //How can I reset the game after nine guesses? This method continues onto the negative values.
-        guessLogText.textContent = "Your Guesses so far: " + userPress; 
-        //How do I log the nine letters? It only sets on the most recent pressed letter.
+        newText = newText + userPress + ", ";
+        guessLogText.textContent = newText;
         
         };
 

@@ -15,3 +15,6 @@
     * Add one to losses if the User fails after 9 attempts
 
 5. The user presses a letter from the keyboard to play again
+    **This is where I face my challenge. I cannot find a way to reset the Psychic game once there is a win or after 9 letter submissions from the User**
+    
+    **Nine attempts and a loss doesn't get logged nor do the number of guesses rest!**
