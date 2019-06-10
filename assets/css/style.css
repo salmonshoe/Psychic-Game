@@ -48,9 +48,7 @@ h2 {
     width: 50%;
     flex-direction: column;
     justify-content: flex-start;
-}
 
-.media {
     order: 2;
     border: 1px solid black;
     font-size: 40px;
@@ -73,9 +71,7 @@ h2 {
     width: 50%;
     flex-direction: column;
     justify-content: flex-end;
-}
-
-.rightGuess {
+    
     order: 3;
     border: 1px solid black;
     font-size: 40px;
