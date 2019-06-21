@@ -6,30 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>VaporWave Hangman</title>
+    <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Rapper Guess Game</title>
 </head>
 
 <body>
-    <header>
-        <h1>H A N G M A N</h1>
-        <br>
-        <h2>~VaporWave Edition~</h2>
-    </header>
+
     <div class="container">
-        <div id="lefty">
-            <div class="media">
-                <!-- <img src="https://pbs.twimg.com/profile_images/667348273800323073/ra2A8j6h_400x400.jpg"
-                    alt="stone-head"> -->
+        <div id="media-section">
+            <div id="rapper-div">
+                <img src="#" alt="some rapper">
             </div>
-            <div class="underscores"></div>
         </div>
+        <div id="game-section">
+            <p>Press any key to get started!</p>
+            <section>
+                <h3 class="section-title">Wins</h3>
+                <!-- The span where user wins will be shown -->
+                <span id="wins"></span>
+            </section>
 
-        <div id="righty">
-            <div class="rightGuess">right guess</div>
-            <div class="wrongGuess">wrong guess</div>
+            <section id="current-word-section">
+                <h3 class="section-title">Current Word</h3>
+                <!-- The span where our current word (and guessing process) will be shown -->
+                <span id="current-word"></span>
+            </section>
+
+            <section id="guesses-remaining-section">
+                <h3 class="section-title">Number of Guesses Remaining</h3>
+                <!-- The span where remaining guesses will be shown -->
+                <span id="guesses-remaining"></span>
+            </section>
+
+            <section id="guessed-letters-section">
+                <h3 class="secction-title">Letter Already Guessed</h3>
+                <!-- The span where our guesses letteres will be shown -->
+                <span id="guessed-letters"></span>
+            </section>
         </div>
-
     </div>
     <script src="assets/javascript/game.js"></script>
 </body>
